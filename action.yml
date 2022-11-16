@@ -13,5 +13,4 @@ runs:
     using: "docker"
     image: "docker://botsudo/action-docker-compose:latest"
     entrypoint: /usr/bin/docker-compose
-    args:
-        - ${{ inputs.cli-args }}
+    args: ${{ inputs.cli-args }}
