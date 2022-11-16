@@ -11,6 +11,6 @@ branding:
     color: blue
 runs:
     using: "docker"
-    image: "docker://botsudo/action-docker-compose:latest"
+    image: "docker://botsudo/action-docker-compose:latest@sha256:a19d4338031602e75657d50ffe154a61019c350daa86cc3999f610eb9ec79d29"
     args:
         - ${{ inputs.cli-args }}
