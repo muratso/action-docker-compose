@@ -1,10 +1,6 @@
 name: "action-docker-compose"
 author: williamdes
 description: "A GitHub action to run docker-compose"
-inputs:
-    cli-args:
-        description: "Command line arguments"
-        required: true
 
 branding:
     icon: "terminal"
@@ -13,4 +9,4 @@ runs:
     using: "docker"
     image: "docker://botsudo/action-docker-compose:latest"
     entrypoint: /usr/bin/docker-compose
-    args: [${{ inputs.cli-args }}]
+    args: ["up", "-d"]
